@@ -1,0 +1,2493 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<style type="text/css">
+
+
+a:link, a:visited {
+  color:white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+h9 {
+  color:#FFFFFF;
+  
+}
+
+p {
+  text-decoration: overline;
+}
+
+
+/*VER AHORA PLAY  */
+.main2-color {
+    color:#FFFFFF;
+	font-size: 1rem;
+}
+
+.btnt {
+  background-color: #0033FF;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.btnt:hover {opacity: 5}
+
+/*Menu 2*/
+.icon-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color:#000000;
+  overflow: auto;
+  
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  
+}
+
+.icon-bar a:hover {
+  background-color:#0033FF;
+  border-radius:55px;
+  transform: translateY(7px);
+}
+
+.active {
+  background-color:#0033FF;
+}
+</style>
+
+
+<style>#navbar {background: #000000;width: 100%;height: 3rem;display: grid;grid-template-columns: repeat(3, 1fr);justify-items: center;align-items: center;justify-content: center;outline: 1px solid #0033FF}#navbar .logonavbar {width: 12rem;height: 100%;object-fit: cover}#navbar a {position: absolute;width: 16%;margin: 0;padding: 0;height: 3rem;color: #FFFFFF;right: 0;display: grid;justify-items: center;align-items: center}#navbar #buscador {right: 4rem}#modal1 {position: fixed;top: 0;left: 0;width: 70%;height: 100vh;background: #000000;display: none;justify-items: center;align-items: start;grid-template-columns: repeat(1, 1fr);overflow: auto;z-index: 999999}#modal1 .cerrarmodal1 {position: fixed;right: 0;height: 100vh;width: 30%;background: #00000000}#modal1 .banner {position: absolute;left: 0;height: 10rem;width: 100%;background: #FFFFFF;outline: 1px solid #0033FF}#modal1 .banner img {width: 100%;height: 100%;object-fit: cover}/* area del contenido del navbar */#modal1 .contenido {position: relative;top: 10.4rem;left: 0;width: 100%;height: 14rem;overflow: hidden}#modal1 .contenido ul {margin: 0;width: 100%;height: 12rem;list-style: none;padding: 0 8px;display: grid;justify-items: start;align-items: center;grid-template-columns: repeat(1, 1fr);grid-gap: 1.4rem}#modal1 .contenido ul li {width: 100%;height: 100%;align-items: center;justify-items: start;color: #CC0000;display: flex;justify-content: flex-start;font-family: Arial, Helvetica, sans-serif}#modal1 .contenido ul li a {text-decoration: none;height: 100%;width: 100%;justify-content: start;align-items: center;display: flex;font-size: 18px;margin: 0 4px;padding: 0 8px;overflow: hidden;color: #ffffff}#modal1 .contenido ul li a: hover {color: #0033FF}/* area del contenido del navbar redes */#modal1 .redes {width: 100%;height: 3rem;display: grid;top: 25rem;position: absolute}#modal1 .redes span {width: 100%;height: 0.06rem;background: #0033FF}#modal1 .redes ul {margin: 0;padding: 0;list-style: none;width: 100%;height: 70%;display: grid;grid-template-columns: repeat(3, 1fr);justify-items: center;align-items: center}#modal1 .redes ul li {width: 70%;height: 1.6rem;display: flex;justify-content: center;align-items: center;color: #000000;background: #ffffff;border-radius: 0px}#modal1 .redes ul li: hover {color: #0033FF;background: #000000;outline: 1px solid #0033FF}/* stilos-para-la-seccion-del-banner */#banner {position: relative;width: 100%;height: 8rem;background: #0033FF;padding: 6px;margin: 0;display: flex;justify-content: flex-start;align-items: center;border-radius: 0px}#banner ul {list-style: none;margin: 0;padding: 0;width: 100%;height: 100%;overflow: auto;display: flex;flex-wrap: wrap;flex-direction: column;position: relative}#banner ul li {width: 100%;height: 100%;padding: 0px 6px}#banner ul li a {display: contents}#banner ul li a img {width: 100%;height: 100%;object-fit: cover;border-radius: 12px}#banner ul li a h6 {margin: 0;padding: 0 4px;position: absolute;top: 0;background: #0000006b;width: 96.4%;height: 100%;overflow: hidden;display: flex;justify-content: center;align-items: center;text-align: center;color: rgb(255 255 255);font-family: sans-serif;font-size: 22px;border-radius: 5px}#banner ul li a h6: hover {color: #000000;background: #ffffff6b;}/* stilos-del-pie-de-pagina */#piedpagina {position: relative;width: 100%;height: 2rem;background: #000000;color: #f0f8ff;outline: 1px solid #0033FF;display: flex;align-items: center;justify-content: center;top: 0}#piedpagina h6 {margin: 0;padding: 0;font-size: 20px;font-family: Arial, Helvetica, sans-serif}#modal1 .cerrarmodal1 {width: 60%}/* ajuste del area del carousel de bootstrap */.carousel.pointer-event {height: 14rem}.carousel-inner {height: 14rem}.carousel-item {height: 14rem}#modal1 .cerrarmodal1 {width: 60%}#modal1 .contenido ul li a {font-size: 15px}}#piedpagina {position: relative;width: 100%;height: 2rem;background: #000000;color: #f0f8ff;outline: 1px solid #0033FF;display: flex;align-items: center;justify-content: center;top: 0}#piedpagina h6 {margin: 0;padding: 0;font-size: 20px;font-family: Arial, Helvetica, sans-serif}#modal1 .cerrarmodal1 {width:</style>
+
+
+<body class="hidden">    
+        <div id="navbar">
+        <img class="logonavbar" src="https://i.ibb.co/nCwCBzz/Pics-Art-06-26-12-27-51.png" alt="logo">
+        
+        <a id="buscador" href="go:buscador"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+          </svg></a>
+
+        <a id="burger" href="javascript:abrirmodal1()"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg></a>
+    </div>
+<!-- area para el modal del navbar -->
+    <div id="modal1">
+        <a class="cerrarmodal1" href="javascript:cerrarmodal1()"></a>
+    <!-- area del banner -->
+        <div class="banner">
+            <img src="https://i.ibb.co/XFcszf0/Media-230629-025611.gif" alt="banner">
+        </div>
+    <!-- area del contenido -->
+        <div class="contenido">
+            <ul>
+            <!-- boton de inicio -->
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"></path>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"></path>
+ </svg><a href="go:inicio">Regresar al Inicio</a>
+                </li>
+            <!-- boton de categorias -->
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 24 24">
+                    <path d="M9 10v8l7-4zm12-4h-7.58l3.29-3.29L16 2l-4 4h-.03l-4-4l-.69.71L10.56 6H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H3V8h18v12z"></path>
+                  </svg><a href="https://sfntv.xyz/inicio">Ver Canales de TV</a>
+                </li>
+ <!-- boton de Política de Privacidad -->
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+                    <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                  </svg><a target="_blank" href="go:acciones">Historial Reproducción</a>
+                </li>
+            <!-- boton de salir de la app -->
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"></path>
+</svg><a target="_blank" href="http://action_exit">Salir de Netvtli  </a>
+                </li>
+            </ul>
+        </div>
+    <!-- area de las redes -->
+        <div class="redes">
+            <span></span>
+            <ul>
+           
+            <!-- boton de Instagram -->
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+              </svg><a target="_blank" href="http://www.e-droid.net/privacy.php?ida=1930220&idl=es"></a>
+            </li>
+            <!-- boton de Telegram -->
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"></path>
+              </svg><a target="_blank" href="http://www.e-droid.net/privacy.php?ida=1930220&idl=es"></a>
+            </li>
+            <!-- boton de Wahttsap -->
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+              </svg><a target="_blank" href="http://www.e-droid.net/privacy.php?ida=1930220&idl=es"></a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</head>
+
+ 
+ 
+
+<body>
+<div id="tigresito-header">
+
+
+
+</div></div><br>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+	<button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+	<button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+	<button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+  </div>
+  
+  <!-- Slider fondo -->
+  <div class="carousel-inner">
+  <!-- SLIDER INICIO AQUÍ -->
+
+    <div class="carousel-item active">      
+          
+<img src="https://image.tmdb.org/t/p/w780//qWQSnedj0LCUjWNp9fLcMtfgadp.jpg" alt="tigresito30" class="d-block" style="width:100%">      <div class="carousel-caption">        <h9>Transformers: El despertar de las bestias</h9>   <p>2h 27m &#x2022; 2023</p>	 		
+<a class="btnt" href="PELIS/Fast y Furious X (2023).html"><i class="bx bx-play bx-tada main2-color"></i>Ver ahora</a>	      
+</div>     </div>
+	    
+	    <div class="carousel-item">      
+<img src="https://image.tmdb.org/t/p/w780//2I5eBh98Q4aPq8WdQrHdTC8ARhY.jpg" alt="tigresito30" class="d-block" style="width:100%">      <div class="carousel-caption">        <h9>Spider-Man: Cruzando el Multiverso</h3>        <p>2h 46m &#x2022; 2023</p>		
+<a class="btnt" href="PELIS/Spider-Man Cruzando el Multiverso (2023).html"><i class="bx bx-play bx-tada main2-color"></i>Ver ahora</a>	
+ </div>     </div>
+ 
+    <div class="carousel-item">      
+<img src="https://image.tmdb.org/t/p/w780//e2Jd0sYMCe6qvMbswGQbM0Mzxt0.jpg" alt="tigresito30" class="d-block" style="width:100%">      <div class="carousel-caption">        
+<h9>Fast & Furious X</h9>  <p>2h 22m &#x2022; 2023</p>		
+<a class="btnt" href="PELIS/Fast y Furious X (2023).html"><i class="bx bx-play bx-tada main2-color"></i>Ver ahora</a>		   
+     </div>     </div> 
+     
+    <div class="carousel-item">  <img src="https://image.tmdb.org/t/p/w780//7e9MVGg8efOhoA2R9XhZcGWTC5Z.jpg" alt="tigresito30" class="d-block" style="width:100%">      <div class="carousel-caption">        
+<h9>Flash</h9>  <p>2h 24m &#x2022; 2023</p>		<a class="btnt" href="PELIS/The flash (2023).html"><i class="bx bx-play bx-tada main2-color"></i>Ver ahora</a>	
+     </div>     </div>
+     
+    <div class="carousel-item">    <img src="https://image.tmdb.org/t/p/w780//cSYLX73WskxCgvpN3MtRkYUSj1T.jpg" alt="tigresito30" class="d-block" style="width:100%">      <div class="carousel-caption">        <h9>Elemental</h9> <p>1h 42m &#x2022; 2023</p>		<a class="btnt" href="PELIS/Elemental (2023).html"><i class="bx bx-play bx-tada main2-color"></i>Ver ahora</a>	      </div>     </div> 
+       
+     <div class="carousel-item">      <img src="https://image.tmdb.org/t/p/w780//ribiMu3iINPxDkofErPxe8jQ8L0.jpg" alt="tigresito30" class="d-block" style="width:100%">      <div class="carousel-caption">        
+<h9>La sirenita</h9> <p>2h 15m &#x2022; 2023</p>	
+<a class="btnt" href="go:lasirenita"><i class="bx bx-play bx-tada main2-color"></i>Ver ahora</a>	      </div>     </div>       
+       
+	<!-- SLIDER FINAL-->
+  </div>  
+  <!-- Derecha <> izquierda---->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</br>
+
+      
+<!--🟢  ANUNCIOS & REDES SOCIALES  -->
+
+<div class="">
+  <div class="">
+    <div class="header">
+<button class="menu" type="button"></button>    
+    </div>
+    <div class="books">      
+      <div class="carousel">
+        
+          <div class="">
+          <div class="">
+<a href="go:crazymod"><img style="width:250px; height:85px"border="0" src="https://i.ibb.co/TqDJZjb/Picsart-23-05-27-01-10-29-384.jpg" alt="Teen-Wolf" /></a>
+          </div>
+          </div>
+          
+          <div class="">
+          <div class="">
+<a href="go:telegram"><img style="width:250px; height:85px"border="0" src="https://i.ibb.co/q0zZ1pb/Picsart-23-05-26-19-04-59-593.jpg" alt="Teen-Wolf" /></a>
+         </div>                   
+         </div>
+          
+        <div class="">
+        <div class="">
+<a href=""><img style="width:260px; height:85px"border="0" src="https://i.ibb.co/PhdjxHR/Picsart-23-05-26-19-02-56-608.jpg" alt="Teen-Wolf" /></a>
+         </div>          
+         </div> 
+        <div class="">
+        <div class="">
+<a href=""><img style="width:260px; height:85px"border="0" src="https://i.ibb.co/D5t9vGy/Picsart-23-06-28-22-09-52-550.jpg" alt="Teen-Wolf" /></a>       
+         </div> 
+         </div>
+         </div>
+         
+
+
+
+</br><h2><font size="4">Canales</font></h2>
+      <div class="carousel">         
+          
+          
+
+<div class="">
+  <div class="">
+    <div class="header">
+<button class="menu" type="button"></button>    
+    </div>
+    <div class="books">      
+      <div class="carousel">
+        
+          <div class="">
+          <div class="">
+<a href="https://embed.telextrema.com/embed2/directvsports.html"><img style="width:200px; height:100px"border="0" src="https://i.ibb.co/tqMMxN7/Picsart-23-07-22-19-38-59-086.jpg" alt="Teen-Wolf" /></a>
+           </div>
+<center><h3>DIRECTV SPORTS 2 </h3></center>
+<center><small>Canal</small></center>
+          </div>
+                             
+          <div class="">
+          <div class="">
+<a href="go:telegram"><img style="width:200px; height:100px"border="0" src="https://i.ibb.co/PgcRSh4/Picsart-23-07-22-19-42-03-099.jpg" alt="Teen-Wolf" /></a>
+          </div>
+<center><h3>ESPN </h3></center>
+<center><small>Canal</small></center>
+          </div>                                                                      
+        <div class="">
+        <div class="">
+<a href=""><img style="width:200px; height:100px"border="0" src="https://i.ibb.co/h1GkPkv/Picsart-23-07-22-19-43-14-577.jpg" alt="Teen-Wolf" /></a>
+         </div>
+<center><h3>ESPN 2 </h3></center>
+<center><small>Canal  </small> </center>      
+        </div>
+                       
+        <div class="">
+        <div class="">
+<a href=""><img style="width:200px; height:100px"border="0" src="https://i.ibb.co/ZM1d36n/Picsart-23-07-22-19-43-37-092.jpg" alt="Teen-Wolf" /></a>       
+         </div>
+<center><h3>ESPN 3 </h3></center>
+<center><small>Canal  </small> </center>
+         </div> 
+         
+        <div class="">
+        <div class="">
+<a href="go:tvchannel"><img style="width:110px; height:140px"border="0" src="https://i.ibb.co/prWNBN3/Picsart-23-07-22-20-03-00-750.jpg" alt="Teen-Wolf" /></a>       
+         </div>
+                
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+         
+<!--🟢 INICIA CONTENIDO  -->
+        
+</br><h2><font size="4">Agregados Recientemente</font></h2>
+      <div class="carousel">
+
+
+<div class="book">
+<div class="cover">
+<a href="PELIS/Socorro Ya es Navidad (1989).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/cvqqcTyYBCADhi4LRAZ5nlIK7mx.jpg" alt="" /></a>
+       </div>
+<h3>¡Socorro! Ya es Navidad (1989) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/1976 (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/vlL3vY9Z1mBF2Uzi4Grfl9uCKOX.jpg" alt="" /></a>
+      </div>
+<h3> 1976 (2022)</h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Abandoned (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/9L9uR1gtXr9WgZkNTGc7bThO6Dm.jpg" alt="" /></a>
+          </div>
+<h3>Abandoned (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/As bestas (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/dV9kPhRJWsQI38IpjoC4AdAsONt.jpg" alt="" /></a>
+          </div>
+<h3>As bestas (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/50 sombras muy oscuras (2016).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/eXxEz9GNVzbSUFvO5cEbpVsJbpw.jpg" alt="" /></a>
+          </div>
+<h3>50 sombras muy oscuras (2016) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/El amante de Lady Chatterley (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/2qQfGJM5dCpO32T6IMJdtdkizGr.jpg" alt="" /></a>
+          </div>
+<h3>El amante de Lady Chatterley (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Polar Express (2004).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/nFO4b8D4U051rBFhjKdgPwOJt5e.jpg" alt="" /></a>
+          </div>
+<h3>Polar Express (2004) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/El Grinch (2000).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/dj6U3KbuwcjMuDir1bUHp0yDcuB.jpg" alt="" /></a>
+          </div>
+<h3>El Grinch (2000) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/El mar del Norte (2021).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/bYnlT2TbgSMytw0mVTQWAZ4mXNq.jpg" alt="" /></a>
+          </div>
+<h3>El mar del Norte (2021) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/El niño delfín (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/3su4upgnuk2CrOVdJLrS5juPDVm.jpg" alt="" /></a>
+          </div>
+<h3>El niño delfín (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Hotel Transilvania Transformanía (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/pwSlzCAynIF6aEP7oxWddo7Kng2.jpg" alt="" /></a>
+          </div>
+<h3>Hotel Transilvania: Transformanía (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Bardo, falsa crónica de unas cuantas verdades (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/sFf4VJvgBA0hyZa5MjosCdnRuPb.jpg" alt="" /></a>
+          </div>
+<h3>Bardo, falsa crónica de unas cuantas verdades (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/La bella durmiente (1959).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/d7aeSm6RgJySwelL5tdu1TCclZh.jpg" alt="" /></a>
+          </div>
+<h3>La bella durmiente (1959) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/La guerra del futuro (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/qn7gzvDTzaorpVWWxIAClDutkBq.jpg" alt="" /></a>
+          </div>
+<h3>La guerra del futuro (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Los renglones torcidos de Dios (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/hB2VqiLDiHAyLdZ1dlXIGqDJy06.jpg" alt="" /></a>
+          </div>
+<h3>Los renglones torcidos de Dios (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Mary Poppins (1964).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/8hU9v0EYEiAWYOkROcy4iWnSNpl.jpg" alt="" /></a>
+          </div>
+<h3>Mary Poppins (1964) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Glass Onion: A Knives Out Mystery.html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/yXGsWQURm614onIpb3iBcp1iLz8.jpg" alt="" /></a>
+          </div>
+<h3>Glass Onion: A Knives Out Mystery </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/La ciudad de las estrellas (La La Land) (2016).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/7pFsAaJmiOppVHcldBzg8JKBHwe.jpg" alt="" /></a>
+          </div>
+<h3>La ciudad de las estrellas (La La Land) (2016) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Matilda de Roald Dahl: El musical (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/7iUkSvlCnYdyl9tSKexwHK9Mo8p.jpg" alt="" /></a>
+          </div>
+<h3>Matilda de Roald Dahl: El musical (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Solo en casa (1990).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/rjc2a9N5pro1xGsSvvnJ1JDXRGm.jpg" alt="" /></a>
+          </div>
+<h3>Solo en casa (1990) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Monstruos, S.A. (2001).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/jTE3BLVCpYaR71L2U8SHV22HvEr.jpg" alt="" /></a>
+          </div>
+<h3>Monstruos, S.A. (2001) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Monstruos University (2013).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/4rLfeHGIyDEQsqR22iajGSLFNME.jpg" alt="" /></a>
+          </div>
+<h3> Monstruos University (2013)</h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Mulán (1998).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/towmTJ0k29quKI9IDnOZKAAtQx.jpg" alt="" /></a>
+          </div>
+<h3>Mulán (1998) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Mulán 2 (2004).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/swMwIcWn1qXUB5iMTviII7JvoU1.jpg" alt="" /></a>
+          </div>
+<h3>Mulán 2 (2004) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Navidad de golpe (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/2p0GlMCe2K8VfjTKEJxDvAG0szw.jpg" alt="" /></a>
+          </div>
+<h3>Navidad de golpe (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Holiday Harmony (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/lFZY8FvL9Tg86EKrQrvaL68Aexo.jpg" alt="" /></a>
+          </div>
+<h3>Holiday Harmony (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Nueve (2009).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/mu1zDw4qxlUzrBizasO24unC766.jpg" alt="" /></a>
+          </div>
+<h3>Nueve (2009) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Love on the Rock (2021).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/itWubFAXws34yK3h77Maxx9Di1h.jpg" alt="" /></a>
+          </div>
+<h3>Love on the Rock (2021) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Ralph El Demoledor (2012)"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/lTpE4JQ2C09NicqvDhwi70IRz62.jpg" alt="" /></a>
+          </div>
+<h3>Ralph El Demoledor (2012) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Ralph rompe Internet (2018).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/w0000005XoLdGQzCt2Nb4ZF6WYNLAq.jpg" alt="" /></a>
+          </div>
+<h3>Ralph rompe Internet (2018) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Rock Dog 2: Renace Una Estrella (2021).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/bi2Axcg9qJyeOExi3hOsycV7kZC.jpg" alt="" /></a>
+          </div>
+<h3>Rock Dog 2: Renace Una Estrella (2021) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Scrooge Cuento de Navidad (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/jqMEPeRCPJFAXE3ZqWv4eBrdCA4.jpg" alt="" /></a>
+          </div>
+<h3>Scrooge: Cuento de Navidad (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Scrooged- Los fantasmas contraataque.html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/xIrP2JK3m0z50y0ROuVQLqfK907.jpg" alt="" /></a>
+          </div>
+<h3>Scrooged- Los fantasmas contraataque </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Super… quién (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/9IO3a6pBom1gk2xahd7kijBzn5L.jpg" alt="" /></a>
+          </div>
+<h3>Super… ¿quién? (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/La Ex (2021).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/gd2Lsq6yMzQmjhlbU2C9vw4HAJ8.jpg" alt="" /></a>
+          </div>
+<h3>La Ex (2021) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Un mundo extraño (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/c16eybXiG9ysoTu7yV460w0Jj43.jpg" alt="" /></a>
+          </div>
+<h3>Un mundo extraño (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Noche en el museo El retorno de Kahmunrah (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/9ftcHkD55IEWgolXWhpQHwoFTsV.jpg" alt="" /></a>
+          </div>
+<h3>Noche en el museo: El retorno de Kahmunrah (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Noche de paz (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/thApEoWf9IbxlnicWXJtynHi8eD.jpg" alt="" /></a>
+          </div>
+<h3>Noche de paz (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Black Panther Wakanda Forever (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/iQ4ydo7nSxIlFyq8sZcu0rCK6AN.jpg" alt="" /></a>
+          </div>
+<h3>Black Panther: Wakanda Forever (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/el chico nuevo (2002).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/jny0Xv5PUcGW2ozK7QL21UPZrY.jpg" alt="" /></a>
+          </div>
+<h3>el chico nuevo (2002) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Una Mente Brillante (2001).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/6zyZ6cauEgSbfii9I7gOvGNyPGv.jpg" alt="" /></a>
+          </div>
+<h3>Una Mente Brillante (2001) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Están vivos (1988).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/KI0X2vFzWOaMF32TnW6zIpronv.jpg" alt="" /></a>
+          </div>
+<h3>Están vivos (1988) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Mamá te quiere (2020).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/rEeTuQSsEyM2bSG7rwvm23WJjfg.jpg" alt="" /></a>
+          </div>
+<h3>Mamá te quiere (2020) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Conor McGregor Notorious (2017).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/5kNpCy7LbuFTKmCNsr0JKVQ748N.jpg" alt="" /></a>
+          </div>
+<h3>Conor McGregor: Notorious (2017) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Gold Run (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/3o9KmtrAvQxEr6GgkKvpFWMwvOA.jpg" alt="" /></a>
+          </div>
+<h3>Gold Run (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Mafia Mamma (2023).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/2za7Cbo2DuZfW8RuXSZNYMtdUJN.jpg" alt="" /></a>
+          </div>
+<h3>Mafia Mamma (2023) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Una boda explosiva (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/3ixVYoqCATZI2mLzIHI9T5Zj2LL.jpg" alt="" /></a>
+          </div>
+<h3>Una boda explosiva (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/El imperio de la luz (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/7Y7l9FDxdknampTfpp6qjVWm54O.jpg" alt="" /></a>
+          </div>
+<h3> El imperio de la luz (2022)</h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Cuando Sea Joven (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/6gIJuFHh5Lj4dNaPG3TzIMl7L68.jpg" alt="" /></a>
+          </div>
+<h3> Cuando Sea Joven (2022)</h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/La mujer rey (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/yW9JTJmdY0Gtr8E685yg29jAlV8.jpg" alt="" /></a>
+          </div>
+<h3> La mujer rey (2022)</h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Guardianes de la Galaxia especial felices fiestas (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/lVBvU4bnskMli0RSK5vWZbiTVja.jpg" alt="" /></a>
+          </div>
+<h3> Guardianes de la Galaxia: especial felices fiestas (2022)</h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Lilo, mi amigo el cocodrilo (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/piJK8RL8YBP4QZ2ZY1hLGS5uMa4.jpg" alt="" /></a>
+          </div>
+<h3>Lilo, mi amigo el cocodrilo (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Corazones valientes (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/1QeAefg6Fa3dXnalRXjh7hwvcQE.jpg" alt="" /></a>
+          </div>
+<h3> Corazones valientes (2022)</h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/El extraño (2022).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/vYhPCfSDlLObeV5bUIkmeUyR4gl.jpg" alt="" /></a>
+          </div>
+<h3>El extraño (2022) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Guardianes de la Galaxia Volumen 3 (2023).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/voAxRv011XHK2qFBXmZKXPj2wWB.jpg" alt="" /></a>
+          </div>
+<h3>Guardianes de la Galaxia: Volumen 3 (2023) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Air (2023).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/4ypRUscxdPXjF2o3BzsKsCUrkpK.jpg" alt="" /></a>
+          </div>
+<h3>Air (2023) </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="PELIS/Fast y Furious X (2023).html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/x3zlm6VxPvVrYWE3bHkYUQMR798.jpg" alt="" /></a>
+          </div>
+<h3> Fast & Furious X (2023)</h3>
+<center><small>  HD 1080p</small></center>
+</div>
+    <div class="book">
+<div class="cover">
+<a href="http://netvtli.atwebpages.com/Lilo%20y%20Stitch%20%282002%29.html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/ezqR4VIU7A7qydzpqLk5Nuwb7gX.jpg" alt="Lilo & Stitch" /></a>
+          </div>
+<h3>Lilo & Stitch </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+<div class="book">
+<div class="cover">
+<a href="http://netvtli.atwebpages.com/Coco%20%282017%29.html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/lUZZhYLLDU4g4XGQ5tvjYNVytxc.jpg" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Coco</h3></center>
+<center><small>  HD 1080p</small></center>
+</div>
+    <div class="book">
+<div class="cover">
+<a href="http://netvtli.atwebpages.com/El%20aprendiz%20de%20brujo%20%282010%29.html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/uLUv1ZQxECr1tcyGqjirTc4nZtM.jpg" alt="El aprendiz de brujo" /></a>
+          </div>
+<h3>El aprendiz de brujo </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+    <div class="book">
+<div class="cover">
+<a href="http://netvtli.atwebpages.com/Tod%20y%20Toby%202%20%282006%29.html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/pqPdNJG8XC7cklobrB5pk8ML1Ij.jpg" alt="Tod y Toby 2 (2006)" /></a>
+          </div>
+<h3>Tod y Toby 2 </h3>
+<center><small>  HD 1080p</small></center>
+</div>
+    <div class="book">
+<div class="cover">
+<a href="http://netvtli.atwebpages.com/Focus%20%282015%29.html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/5Nfl7nbruxF1z01GxExUO0GYujm.jpg" alt="Focus (2015)" /></a>
+          </div>
+<h3> Focus (2015)</h3>
+<center><small>  HD 1080p</small></center>
+</div>
+    <div class="book">
+<div class="cover">
+<a href="http://netvtli.atwebpages.com/Idina%20Menzel%20Por%20d%C3%B3nde%20se%20va%20al%20escenario%20%282022%29.html"><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/gKYwlh6iVWpyFn1PO8GznQwbBmz.jpg" alt="cobra-kai" /></a>
+          </div>
+<h3>Idina Menzel: ¿Por dónde se va al escenario? </h3>
+<center><small>  HD 1080p</small></center>
+     </div>
+    <div class="book">
+<div class="cover">
+<a href="go:halloweenn "><img src="https://movies.universalpictures.com/media/halloweenends-poster-560x880-6307e4fdcc4c1-1.jpg" alt="cobra-kai" /></a>
+          </div>
+<h3>Halloween kill</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:housep "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSffkjyq-LrwF-1stSiYtzgbD_apP8iHN3SPivwUYX42MENJYw" alt="cobra-kai" /></a>
+          </div>
+<h3>Fiesta en casa</h3>
+<center><small>  HD 1080p</small></center>                 
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:enola2 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJspkHQDGmRmok4uu_Vml85SjRkrsQEeQiUw&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Enola Holmes 2</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:emilylaest "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvxomWnygyZlm2S5N6Ug3xEHqIER86YtOgve7ZSnzbuT3LA9wf" alt="cobra-kai" /></a>
+          </div>
+<h3>Emily la criminal </h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:mdbw "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtK_jzPv4BocoBQkuv_6FjlaW8f7Ady8DjiqL95d1ZRreFSwzF" alt="cobra-kai" /></a>
+          </div>
+<h3>La maldicion de Bridge hollow</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:eastofthe "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSveltQzcdakYyF6j-eU3Uz-LKUjvZJPHcH3CSm-YJuHnEuxrR4" alt="cobra-kai" /></a>
+          </div>
+<h3>Al este de la montaña</h3>
+<center><small>  HD 1080p</small></center>                    
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:elvdelh "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ0R7RW6Aj6rBv2kC-CF1bZoKfms4mDFipmT0J2YmyfEWvhwK9ipgkNyk&s=10" alt="cobra-kai" /></a>
+          </div>
+<h3>El vuelo del halcon</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:elextrano "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7ywHJNU-8p5P0GsEOgn9TIf2aJrVSWJSpwAr4M1JvlGwV-pu0" alt="cobra-kai" /></a>
+          </div>
+<h3>El extraño</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+        <div class="book">
+<div class="cover">
+<a href="go:abismoinfi "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtfpks2Ou4wvHC3VjScWvg1JY8uCw70XjWgk-PDlWemKfPd8dQ" alt="cobra-kai" /></a>
+          </div>
+<h3>El Abismo del infierno</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:angelmuert "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5OiLflouh21IZwzH4tkAzjo9ZTwlPc0ZRML7NpDB0gWaDh4Uu" alt="cobra-kai" /></a>
+          </div>
+<h3>El Angel de la Muerte</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:arg1985 "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIyv8_PwPoMrG05lmwk2fNw_hrqqzlsjKzMik8Y4KAWvkIZsc-" alt="cobra-kai" /></a>
+          </div>
+<h3>Argentina 1985</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:scoobydoo"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkNI2jHhliZNFMPW-mIo-oS24Zz73EUaUNriN0f9x-yXkGJ0fq" alt="cobra-kai" /></a>
+          </div>
+<h3>Scooby doo</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:amnesico "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEQkh4jFkc0R4OQIkE8qCHuY9iM7wXxxFY4ued1XXVC5_ZpXag" alt="cobra-kai" /></a>
+          </div>
+<h3>Amnesico</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:noestarass "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT989FiOzqwPvuZ9Uoijs4Eeiho2kSO0mWKtMRrZf8RpH0bKvid" alt="cobra-kai" /></a>
+          </div>
+<h3>No estaras sola</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:dahmer "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx5VkitMkh9bzkM8uRTCfTSjrIfoeOdRbVvpC7axrDrZESK2nRW93XE4-j&s=10" alt="cobra-kai" /></a>
+          </div>
+<h3>My amigo dahmer</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:boksoon "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs3whavLz8SwYwYrGgKRLTqqrhV_BlFzYzcQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Boksoon debe morir</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:adiccionp "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnblTRCBLOcoxpmqzTbl4pRY89NG2DTN5fvA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Perfecta adicción</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:tetris "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIKuD_xLZtNU3ZuRgRYTHLVcmET_J7ftESFg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Tetris</h3></center>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:Jonhwick44 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJkS2yePUWR2k1PstGMqexcPMiYhn68VW6iQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Jonh wich 4</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:invitacion "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY4NTtGkTIhoSAHpy7sAqa3h31cZCFlBxlo6LTtbEcNv1z4jV2" alt="cobra-kai" /></a>
+          </div>
+<h3>Invitación al Infierno</h3>
+<center><small>  HD 1080p</small>  HD 1080p                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:laescuelad "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjO9kKGw6tw9RUmil1VzalHgBy349gMJq13BjNIckrh3l_S7qv" alt="cobra-kai" /></a>
+          </div>
+<h3>La escuela del bien y del mal</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:lacaida "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRE3KCld7VDmrGXDWSLx2t5blAWrPyxBX2dRn3SJ1s6fRsC-Vq" alt="cobra-kai" /></a>
+          </div>
+<center><h3>La caida</h3></center>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:medieval "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPNrC3-knJ_-V1oTs1ntfxDWVesYJpCol99nFdTKXeO65j96oU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Medieval</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:men "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQayUFZBDeERSNdloZelD_lt8OIEmiDG0iDolpwoxTDaPgA_3U5" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Men</h3></center>
+<center><small>  HD 1080p</small></center>                    
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:ternorespl "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnR0YlyUT203YaseUNUuVdVjrGz1S5H65-XL70nNldpBrv6Faq" alt="cobra-kai" /></a>
+          </div>
+<h3>Eterno resplandor</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:wendell "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYjbOwqSlZ9_EYbwlegHGJ6NLzbj0QFOKMbYsNlJyC0qtDZeeu" alt="cobra-kai" /></a>
+          </div>
+<h3></h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:terrifier "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp7IM7WVDTKjohwILhqRzFX6pPKCXqpCROlXbQNkYixM3Vr2zh" alt="cobra-kai" /></a>
+          </div>
+<h3>Terrifier</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:tamor "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR92wz1XqDQB9FTYy-5PaRLaQ_ppskcDtVj7DLGBUrAkjzh_dU" alt="cobra-kai" /></a>
+          </div>
+<h3>Tacticas de amor</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:cargentino "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaTUW-q2xCiua8rvK-asGCbmeOexfNSOOiA41HyzHILbkhRnLE" alt="cobra-kai" /></a>
+          </div>
+<h3>Un crimen argentino</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:ptraviesos "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrnUoHZ9_O_UCyvqyX3PPl-JKofDz1iaj0RB72HEtdjMp5NTla" alt="cobra-kai" /></a>
+          </div>
+<h3>pequeños traviesos</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:shooter "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj9GmiMagSUrLGqmYKEFBWIGL2BgunZQ5heBo8kCCNLkTSgJuh" alt="cobra-kai" /></a>
+          </div>
+<h3>Shooter: el tirador</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:cnegro "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnUFaFYTXT5i30PIVv36h4DVP53bPqGXki6e5x2ge_9wMX242G" alt="cobra-kai" /></a>
+          </div>
+<h3>El cisne negro</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:exterminio "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRInwOgTdy37pOnmxBu8QZPVq3lWZxDFug9gUMjdb4sFB_ZlmZS" alt="cobra-kai" /></a>
+          </div>
+<h3>Exterminio</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:immerstill "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJj8B6O7OQPXfcU0w-ZYW4_-i_S52cIA4UQBXGK_8mkbddEXLn" alt="cobra-kai" /></a>
+          </div>
+<h3>Sin rastro</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:lacdom "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5cuG1kM-UOXviVbuj3_5N6SMPho1aaotdSNbIefnmm2yNn_46" alt="cobra-kai" /></a>
+          </div>
+<h3>La cosa del otro mundo</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:sangrex "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMdlt4yCuuwgeUrOsrKydjNO5tzxXZa8TrTA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Sangre por sangre</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:elultimosa "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRhCsJpxW72J6Wq7VQladNCApG_pdEzBWJ3Q&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>El ultimo samurai</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:deadbride "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOFirj-UPjivkr_wJW-Oq792qFdjq_KiBCw&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Conjuro siniestro</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:juegoperfe "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzJdPgkbogNRWdJBmgjK0cp-P_p4YFNKz0dA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Juego perfecto</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:jaula "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5-xpO0VNDhg4eeDlNLjRX6WVHOChvDXvUp-_pht99hOuTbN8t" alt="cobra-kai" /></a>
+          </div>
+<center><h3>La jaula</h3></center>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+        <div class="book">
+<div class="cover">
+<a href="go:cseajoven "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrTHp5hfNB9XT_ndgwv31owjw3GN1J3FUfA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Cuando seas joven</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+        <div class="book">
+<div class="cover">
+<a href="go:chavodel8 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0KqyZ_opJ6Hh7rTGECvUUglkl5KcfBdHbUg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Chavo del 8</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+        <div class="book">
+<div class="cover">
+<a href="go:coraje "><img src="https://www.themoviedb.org/t/p/w440_and_h660_face/6GgsPD43JYdQT1IdwByItdIrr5f.jpg" alt="cobra-kai" /></a>
+          </div>
+<h3>Coraje: el perro cobarde</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+      
+
+          
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    
+</br><h2><font size="4"> Titulos Recomendados</font></h2>
+      <div class="carousel">
+
+
+<div class="book">
+<div class="cover">
+<a href="go:lanovi2"><img src="https://i.ibb.co/7Qy0w4j/1833363.jpg" alt="cobra-kai" /></a>
+          </div>
+<center><h3>La novia 2</h3></center>
+<center><small>•Latino   [HD]• </small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:lanovi "><img src="https://i.ibb.co/ZzHj6SJ/images-2.jpg" alt="cobra-kai" /></a>
+          </div>
+<center><h3>La novia</h3></center>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:amster "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0y-aZsZJU4aF-SPZt7cxhXtQvuXE7uHj8yg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Ámsterdam</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:anasta1 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0MMsaSCCiq4ZKXeVj9oCOksrg3OE8j9rf1XBkAweFW8IoSIfs" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Anastasia</h3></center>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:tekken1 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZs__Qn51-JM7O6g9OfojL7Lm4MkBBxPJiug&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Tekken</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:gun1 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxevV9CNFemH51z-thPvVAKPFTRB8IQIS31Q&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Gun Shy</h3></center>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:belle3 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh_pQA5ApMyf35-W4J6EzUZq-uD4DP8FtdjA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Belle </h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:resurrecci"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVLbijIiiofuqF5anoJeK2N25GMScgwur5mCcsQaQctyWy_63u" alt="cobra-kai" /></a>
+          </div>
+<h3>El especialista</h3>
+<center><small>  HD 1080p</small></center>                 
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:imposible6 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbyNgo_8QGPeadMsjMlvym5NxqPgtWSgplsl1UygAiswXEEav2Ps7Sl6s&s=10" alt="cobra-kai" /></a>
+          </div>
+<h3>Mision Imposible 6</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:imposible5 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXKsCOuSizfCy7Bu0Aa4_6n0x9NYQgn0zvhw&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Misio Imposible 5</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:imposible4 "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7lbOayHfgx6v7K2OPYSOqJQFhNXNo3RQGjeb7y4g3tu7E4c5w" alt="cobra-kai" /></a>
+          </div>
+<h3>Mision Imposible 4</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:imposible3 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWPcBYzf3x5iMzU-HvziAwbBWbrmTAxh5k8ErcNQSQisj73lc0" alt="cobra-kai" /></a>
+          </div>
+<h3>Misión: Imposible 3</h3>
+<center><small>  HD 1080p</small></center>                
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:imposible2 "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNCAZW1hfmNo-ogXhvVyMVuF51LPU-Agfzxx8SJxNXhVO2CPR2" alt="cobra-kai" /></a>
+          </div>
+<h3>Misión: Imposible 2</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:imposible1 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6ZFZDil_P6jOOb7RkcXvMmzA4Iv-llLqvO-6WSUrfSLGd_jCCkpbj_s&s=10" alt="cobra-kai" /></a>
+          </div>
+<h3>Mision: Imposible</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:equalizer "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYsBpoWl7CxE6MF_os9AD7lyvLOqwwxbDqUzKNc0E203z4lFGwGvPT6aMm&s=10" alt="cobra-kai" /></a>
+          </div>
+<h3>The Equalizer 2</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:pinochoo "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBTroKIU3vBzixwr-8F_ePdw5sqPLjRcf5t6Mj9hCU4wVUQV5e" alt="cobra-kai" /></a>
+          </div>
+<h3>Pinocchio</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:goldd "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCtYtW83TqylVlJU5h-7Jgbpd50xsrcAkFGdtwz9Bgcq1jVLXZ" alt="cobra-kai" /></a>
+          </div>
+<h3>Gold</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:fuerzas "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJyYwxqTrwqyJf9ifPl3eLQLChY5mWxdv9nw_eQnAZ5iWzNI0S" alt="cobra-kai" /></a>
+          </div>
+<h3>Fuerza vital</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:vanhensi "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPEKPlt6b0GegxsvaflIHNRHP6-GxY7BMBusDEO2SOL6X6JU10" alt="cobra-kai" /></a>
+          </div>
+<h3>Van Helsing</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:sheroe "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqrhM9UBl_dxhCAmw5g1-boXs8WpQTou1LUQovBrx9m1ShlslR" alt="cobra-kai" /></a>
+          </div>
+<h3>Superheroes la película</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:loscroods "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIrKK7XUK4DjOqXXQDALRr3Coe0Vqnn2C930GLLxu1pnCIVcm" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Los Croods</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:crias "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSEFLSlcZ6tMQegNp65LK7aXaIvQzjhk56iaHBb4EXwBSxCRvT" alt="cobra-kai" /></a>
+          </div>
+<h3>Crias siniestras</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:robot "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYSCaPVXoRoA3Sp4hO7hh6DEBER4cEcRI5-nSj9yolxCSaZZM-clUtezM&s=10" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Robots</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:avatar22 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR2LI0vvoUv6ZulAZ1eiu76vz2VTsaRW_7wA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Avatar 2 La Leyenda del agua</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:renacido "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlN5OD61iSkjYTIyp7OPj5923ePBDsZdie06SRewAuHsJ9wGGNSOT0YQ&s=10" alt="cobra-kai" /></a>
+          </div>
+<h3>El renacido</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:iop "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDVwTCDbSFRmRy3XZKKNa_CuuDuajNrobGIw&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>IO</h3></center>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:twodeath "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_ZbIIp38V11X-fgLEHXBeL0zrYLDV1ngBhI5-yB9N2OsrzOprZthfdJGE&s=10" alt="cobra-kai" /></a>
+          </div>
+<h3>Two deaths of Henry Baker</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:muereharr "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsXX-J7br62F-Z3FaQVx0u5YW--MmpCEpCtQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Muere Hart</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:barbaria "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFs2N65haH64PTi_t6AeFB3dKZxE-thUYZQg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Barbaria</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:scomon "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgHDRfT401vGnQwrsKw-U9AI0ZEX8ngGU5xdQkdnTEhiuoATbb" alt="cobra-kai" /></a>
+          </div>
+<h3>Son como niños 2</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:blackp "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Q54D7HI8K97ngNck0oNwn-lQUABAGbXG-b8foNP-yI9m_0Eb-lI9beM&s=10" alt="cobra-kai" /></a>
+          </div>
+<h3>Teléfono negro</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:dog11 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4MoiIb21vRX_ab-2QikOVy-qSRwTLGWDogA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Dog</h3></center>
+<center><small>  HD 1080p</small></center>                   
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:desesp "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsYdEK2fOOJKp1LBies6UVgDieZPKDcsMSnQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Desesperada</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:pola "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpywD2nQhxBX7bSyp6b21K6WvVln1Tc0H3EQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Polaroid</h3>
+<center><small>  HD 1080p</small></center>                    
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:amenazaba "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRREv7i-nc22oSpMsIR9YqimhpsXOM13cwJtg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Amenaza bajo el agua</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:vhs9 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWKE_FhA1gyuI_Drrz5h1jN9oUvb9FBiTDkA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>V/H/S/94</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:unhlenn "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUF4hJbdGpoMGPucoB-Z7mIoVcVJa-hAgL0iuiurfDJmwB3-O7" alt="cobra-kai" /></a>
+          </div>
+<h3>Hombre lobo entre nosotros</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:oscuras "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDvk5hOvGfMIu_8z2WvZZj7mwbXrjNTA6rOlUaMhYYgcu43xQT" alt="cobra-kai" /></a>
+          </div>
+<h3>Oscura separación</h3>
+<center><small>  HD 1080p</small></center>                 
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:scapeunder "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqgh7IIaEXXrTvHSCc1MHYCP5XUhs6RuqAg59Abrpf1SFFX8db" alt="cobra-kai" /></a>
+          </div>
+<h3>Escapa del Undertaker</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:porquee "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpPkO3M-QjBPyAmNbUbAzRLfsJdhsPT3G8wA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>¿Tenia que ser el?</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:johnc "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyqjINEgNdxZ4jotb5eP_VT2oiTQK9VtdGFlrPe6SPsJkW0E-c" alt="cobra-kai" /></a>
+          </div>
+<h3>Jonh Carter</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:timefo "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThQP0McgaJxVvy-RwWi0VkHykna2Cw9rVXRUc0xaJiFMBeyyvl" alt="cobra-kai" /></a>
+          </div>
+<h3>Tiempo para mi</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:jurassic "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSD5Y0oRbfJrCUi4sV6VFnbK85APz_Ld15ysejF5KVXLSkzyrZr" alt="cobra-kai" /></a>
+          </div>
+<h3>Jurassic Park</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:jurassic22 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUHeu0jc0dfQs8C-LeXquWgLXeaAC_9pZbs9DYL0YzTNdT6IjmLXBelj8&s=10" alt="cobra-kai" /></a>
+          </div>
+<h3>Jurassic World</h3>
+<center><small>  HD 1080p</small></center>              
+        </div>
+       
+                                                     
+          
+        </div>
+      </div>
+    </div>
+    <div class="books">
+</br><h2><font size="4">Películas Populares</font></h2>
+      <div class="carousel">
+        
+        <div class="book">
+<div class="cover">
+<a href="go:adesorden"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk6Ge5vuBxUgiJ4BkxML2nq4fFG2DARhvJCY-abRy7lmjAFtmN" alt="cobra-kai" /></a>
+          </div>
+<h3>Agentes del desorden</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:yrubias "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTn8tj9u-Tm9FkAaf2ZDkmIOV37fDnJKXB49_Ta48K63m9ZvSYm" alt="cobra-kai" /></a>
+          </div>
+<h3>Dos rubias con pelo en pecho</h3>
+<center><small>  HD 1080p</small></center>                 
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:elm "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEYha6Kt6FYShMfGOlaCHp5Dnt2_LIzncXCFFiX2SruDTPwNXt" alt="cobra-kai" /></a>
+          </div>
+<h3>El mesero</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:ccenicient "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchil95W7EHRBYG2dzQq_jUJtweM9R-iWupA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Cenicienta</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:kfusion "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw34UhjKTBjcLZHGQcmh-lI8EgIHo090R2Rg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Kung fu sion</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:pijama "><img src="https://i.ibb.co/VNwrJtZ/IMG-20230320-145417-774.jpg" alt="cobra-kai" /></a>
+          </div>
+<h3>El niño con pijama de rayas</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:rleon "><img src="https://i.ibb.co/jhFqpWZ/IMG-20230320-145609-544.jpg" alt="cobra-kai" /></a>
+          </div>
+<h3>El rey leon</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:exorcismo2 "><img src="https://i.ibb.co/rH7NqzG/IMG-20230320-145227-874.jpg" alt="cobra-kai" /></a>
+          </div>
+<h3>El ultimo exorcismo parte 2</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:exorcismo "><img src="https://i.ibb.co/dmj80ZK/IMG-20230320-145223-611.jpg" alt="cobra-kai" /></a>
+          </div>
+<h3>El ultimo exorcismo</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:elv "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Sanh5Mv54ThYdZGmdFBQhtoTgDI21kbRSA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>El vengador</h3>
+<center><small>  HD 1080p</small></center>                
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:miedoprofu "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbGgF2YNipzdZp_wKPfjq4EXHyJ6MPfk6Q1WN4KCHqGtBCyhbE" alt="cobra-kai" /></a>
+          </div>
+<h3>Miedo profundo</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:dragonhero "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8AP0KJCtekJp8QZrRZYeaRlUPPEpkfEgRr_js1VTCKLDQ6hKt" alt="cobra-kai" /></a>
+          </div>
+<h3>Dragon ball: Superhero</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:bodsponge "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhghk7SNR7RYtS43X_t1IHw0NSiDxqUUGzoCUgtvivjOZlbRu_" alt="cobra-kai" /></a>
+          </div>
+<h3>Bob Esponja: al rescate</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:batman2008 "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSaolCejKaDO-xoV1KyNQbg7dXZO0QihEkIFDdmaU_2dT1Fgc9" alt="cobra-kai" /></a>
+          </div>
+<h3>Batman el caballero de la noche</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:batman2012 "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNZixiDVhS4Pj4tHIDHO2nD2Rc1RP1daVRWGwiLywxkYqm7Hww" alt="cobra-kai" /></a>
+          </div>
+<h3>Batman el caballero de la noche asciende</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:batmanbegi "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0cUd7IgqVoDUKj66vhEnCLCPAmxRzOfXdZEO51DigafviASVgPp0s34c&s=10" alt="cobra-kai" /></a>
+          </div>
+<h3>Batman begins</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:troya "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNBsJf7UYpkOIx9Dae_Ol1qRcgXaaULMBISQkRI-vVEnlSXzkG" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Troya</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:cseajoven "><img src="https://i.imgur.com/nu399tD.jpg" alt="cobra-kai" /></a>
+          </div>
+<h3>Cuando sea joven</h3>
+<center><small>  HD 1080p</small></center>                 
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:spiral2021 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtHGrvlQjwhLbpZH9sx5OQlNS9mljE2UCdS14QcyR3JACXs428" alt="cobra-kai" /></a>
+          </div>
+<h3>Spiral saw</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:h2 "><img src="https://i.ibb.co/HTGkt5R/Pics-Art-11-06-03-42-34.jpg" alt="cobra-kai" /></a>
+          </div>
+          
+
+
+       </div>
+      </div>
+    </div>
+    <div class="books">
+</br><h2><font size="4">Prime video</font></h2>
+      <div class="carousel">          
+                    
+
+<div class="book">
+<div class="cover">
+<a href="go:policeman"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXgKXEMbNQI30vAQYOKeRN7U-_g_PODUoPRg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Policeman</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:nadie "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxP5Lzm0Rr4QligGccjP6nNeZPwoCgJo0QuQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Nadie (Nobody)</h3>
+<center><small>  HD 1080p</small></center>                 
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:42seg "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRblxOcxyWslB_cT89g9LaiFxuOH1klP29eiQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>42 Segundos</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:avesdepres "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgxNDfCuyQP9_ZBN9YQ9tj5ym2Vmt8VyxPgQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Aves de presa</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:catherine "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3eVkGK06_TOk_nKCQqhXvW-wImEtmbwQ4yw&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Catherine called</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:cyrano "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJx9E8qxLwwXJe4HAkrcNHVAaWxFHVWll8Fw&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Cyrano</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:yang "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSerXfGdPNT3QgLNshflcJA47pQyFgbRGvI5A&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Despidiendo a yang</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:ciudadp "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjLCIXOPcQ_QpqhlafSd5vvsUVQVobPTmXLw&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>La ciudad perdida</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:licorice "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX4a8BM0aFQOB1n9B3N_o68VxhhmmhEm2O_Q&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Licorice pizza</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:vapasarme "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSFPfrnTo5m2qFlCS9qoKeltatY-5ewbxtbg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Voy a pasarmelo bien</h3>
+<center><small>  HD 1080p</small></center>                
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:sonic2 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjUP3mKSaXTewFo7dbe1CyesSL8xNCTl2_5A&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Sonic 2</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:smile"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMuGkB4btw3EHE-JJrqoCDyLwzsvz66F4PWg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Smile</h3></center>
+<center><small>  HD 1080p</small></center>                  
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:mananahoy"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Lpb2C2v6Qr312ZK1dgrX3exmmKMeerkj0Q&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Mañana es hoy</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:buenv "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwXtVnaj-0XaLhk7-OPwI4n5f-fIAE0o_RRg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Un buen dia en el vecindario</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:dejaloir "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlKUsWEsxPM7Nc7ZN4Yg42qiLykJqcl_KO1g&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Dejalo ir</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:nannys "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXp156OKh3PXszPzXuNbj8Vwvzb6qVOaUfoA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>La niñera</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:hastahueso "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwFFwU-Kid-gh4LRVUfX4gml9L7icJVC6lig&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Hasta los huesos</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:samaritan"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRst_6a4oOlgc_15AS5Bxqez-NiCLRtM8k8wg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Samaritan</h3>
+<center><small>  HD 1080p</small></center>                 
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:topgun"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUepD6TEvhMiGS5OrY6gVHhzwc7_V1bmOKxA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Top gun</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:amazon "><img src="https://i.ibb.co/HTGkt5R/Pics-Art-11-06-03-42-34.jpg" alt="cobra-kai" /></a>
+          </div>
+ 
+
+
+       </div>
+      </div>
+    </div>
+    <div class="books">
+</br><h2><font size="4">Disney plus</font></h2>
+      <div class="carousel">  
+
+<div class="book">
+<div class="cover">
+<a href="go:angry2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRja97jpzxCnYmOEhaP8RCoYaEUxZMgJKLW-A&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Angry birds 2</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:angry "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw9AqUifMdjppni1b6cUpKxAhKeNKmMqvgSQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Angry birds</h3>
+<center><small>  HD 1080p</small></center>                 
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:elplaneta "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeYDPftY2ENkXjt9sTnH2rfQykh8CDAO4VMQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Le planeta del tesoro</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:elultimoma "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPmNxA_mEZKp0nUJ36Qc_XXxbv3XRF535nHg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>El ultimo maestro del aire</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:jack "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi61s8vkLM_BYkEdrJMV4OUivDCkOtQIZWEg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Jack el gigante </h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:lemonade "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVtTqdj-SEYWKK8ULczTDmuxxJeVgsBCzeMg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Lemonade Mouth</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:lossimpson "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8SnBw5Vhxmd9RoOrjL0h30pyw3kwG6IEix37z3Ui9AqikzK1w" alt="cobra-kai" /></a>
+          </div>
+<h3>Los Simpson: La pelicula</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:blackpante "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8HQNAy3PwvGeybE1jcP94PRu6f7igPSeTanRW8F999mqUPKct" alt="cobra-kai" /></a>
+          </div>
+<h3>Pantera negra</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:pequenos "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB9ClO2QzsL5SqRP-ky_HSi25otiZJN2dsxA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Pequeños invasores</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:spidermanv "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh2GXTyQSFOIQelpXCdnls1NyRfsG1ZcgGZg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Spider man: sin camino a casa</h3>
+<center><small>  HD 1080p</small></center>                
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:jefe2 "><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXARwp_XQux-py8icUrZkff8zUW7lEnpQ4qKIlBwilvsnEQP00" alt="cobra-kai" /></a>
+          </div>
+<h3>Jefe en pañales 2</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:jefe"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQV9HkqDvxudm4M_TcQ7D9wzZZuYGt1d9umU3afgXJhyjA51vEu" alt="cobra-kai" /></a>
+          </div>
+<h3>Jefe en pañales</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>        
+
+
+
+
+       </div>
+      </div>
+    </div>
+    <div class="books">
+</br><h2><font size="4">Peliculas de comedia </font></h2>
+      <div class="carousel">
+
+
+<div class="book">
+<div class="cover">
+<a href="go:puppets"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc1RbMiTp6weFXB81efRuBobWMrljMRD_mHA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>los Puppets</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:mrbean2 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSeL6b4niJLX6qW9_WrFHqJ0hVAYVF95vD_w&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Mr bean 2</h3>
+<center><small>  HD 1080p</small></center>                 
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:mrbean "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDCtOvGJ63T-rYe7QsBNF5D4ZyBfOJsW_vqg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Mr bean</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:jane "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwni6ShEYTBr38NfjgiTFiT-euiDkzZEIArg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>habla con Jane</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:noes "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzhjoqWWh-WSC7cTvMJhshzOLJaKzqo2bojQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>No es otra película de miedo</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:superheroe "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtB6IFrbwJWy6_gcvoHhpBmldVgP0ilOs_zg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Superhero movie</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:willow1 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3fknUW0Z0LWEafXi0YvF8vZMtlSlRkCN2WQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Willow</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:noesotra "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMptVuSu-ar8Hd5GSRS1BL2WzM7Uzp7zDsvg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Date movie</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:epicmovie "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtCpCKOizfYn9w_a0o81ayjnki2fmyL1YZAg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Epic movie</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:borat "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT3EUBn8c_6j_WYiARbNpN9MlYQuBsmHXe-w&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Borat</h3></center>
+<center><small>  HD 1080p</small></center>                
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:borat2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFM_b58COt-DR9LlKrMrhu-hkeuO46ntRKbg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Borat 2</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:paul "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3W1ZJsaCi1XRO2v_nKrOL0-iWIYkM44aebw&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Paul</h3></center>
+<center><small>  HD 1080p</small></center>                  
+        </div>        
+
+
+
+       </div>
+      </div>
+    </div>
+    <div class="books">
+</br><h2><font size="4">Peliculas de terror </font></h2>
+      <div class="carousel">
+
+<div class="book">
+<div class="cover">
+<a href="go:mediu "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThQ2x-RChhL96SR5wQVLZMo-KDxVEboC9ZuAxZLIEZIsRqYKJ6" alt="cobra-kai" /></a>
+          </div>
+<h3>La medium</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:llora2 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2qgohH2puiS1kZGzK-HuaY1UwzDRcC5pbg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>la llorona 2</h3>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:conju3 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbohd1qzdkVWtNZm4oZdOCp4q85GaJP9Kk3g&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>el conjuro 3</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:anavuelve "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NVoCFt2ZYlj4v-EQon6MC4oGmAoZoXMPow&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Annabelle vuelve a casa</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:anacrracio "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwjtJ9srJL3pKt-dZsD-B9ucvM6tGdpkLlsA&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Annabelle 2 (la creacion)</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:anabel2 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgkb2fpeSw31mB6EUjEhkJdF9U8XKYV9jGiw&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>Annabelle</h3>
+<center><small>  HD 1080p</small></center>                 
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:conju1 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDZt_fByvBLpS6-Vjf_lR3nuhEcCDjHpxe9Q&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>El conjuro</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:conju2 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS60fCMhIuV72ZUlOIE5Kh2t2nBTlenjGvfyg&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<h3>El conjuro 2</h3>
+<center><small>  HD 1080p</small></center>                   
+        </div> 
+<div class="book">
+<div class="cover">
+<a href="go:lamonja201"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLuYcFIVb8tYiNj5qI92PtRf05PNDaYAKd4g&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>La monja</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:saw8 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoHXQBex57G15z0OK9IQ-IAS2OPupQTYN69573DRwKnA0ltLOy" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Saw 8</h3></center>
+<center><small>  HD 1080p</small></center>                 
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:saw7 "><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6LbP9jMDbqTwKfD44d5UE0UAdnD_GLth9nYRzXrNLsRP-XhmX" alt="cobra-kai" /></a>
+          </div>
+<h3>Saw 7</h3>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:saw6 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnNqV7Q8IkAd9yTzHxjFC5dRhBI6GGlv3RuQ&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Saw 6</h3></center>
+<center><small>  HD 1080p</small></center>                  
+        </div>        
+<div class="book">
+<div class="cover">
+<a href="go:saw5 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj24DgZotPYJS_AIW_sGY9DkuHkyzl-FatP50s84ft2ukQQ31G" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Saw 5</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:saw4 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH1s0HZ4ZWBK3A-E-mk72owus5y9m-bw2vx2Nm7KW__IMPrmlaXi4zXEOA&s=10" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Saw 4</h3></center>
+<center><small>  HD 1080p</small></center>                  
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:saw3 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5q2WdnvyhLNHZt8JwQCurM2U7FNApMNUd_CQAvg_E5ErRyJVFHYyXBLca&s=10" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Saw 3</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:saw2 "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3lHZslE9dMp9YtLx2AXI9lKs_NUd8c06j-IMlCMa2mw-fOIJxTZrMDMs&s=10" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Saw 2</h3></center>
+<center><small>  HD 1080p</small></center>                   
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:saw "><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl92RhuqvbiAhqTBChdWGA-ZrCtUcFUDPoug&usqp=CAU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Saw 1</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:scream2 "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR0G0vjJiPYMh4RDeru3ao1RblW2IsBZFn-DN9R55rHmYVYBHU" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Scream 2</h3></center>
+<center><small>  HD 1080p</small></center>                
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:maligno "><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3dwVsuwm1rIlKGG2GpBYgeZjQNivfr_OChXUxroYq-zTsYviv" alt="cobra-kai" /></a>
+          </div>
+<center><h3>Maligno</h3></center>
+<center><small>  HD 1080p</small></center>
+        </div>
+<div class="book">
+<div class="cover">
+<a href="go:ecarmen"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4LUr9AJ76WgQJZw7yLpckUbdh6xudHI2ZCafXB_nqFG6JXSnO1jdLEnYJ&s=10" alt="cobra-kai" /></a>
+          </div>
+<h3>El Exorcismo de Carmen Farias</h3>
+<center><small>  HD 1080p</small></center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+ </div> 
+ 
+                
+       </div>
+      </div>
+    </div>     
+<h3> </h3>
+<center><small> </small></center>                   
+        </div> 
+          
+        </div>
+      </div>
+    </div>
+    <br>    
+<style>
+	body {
+	background-color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+input, button {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0;
+}
+
+.device {
+  width: 375px;
+  height: 667px;
+  background-color: #000000;
+  border-radius: 0px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  padding: 0px 0px 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.menu {
+  border: 0;
+  width: 20px;
+  height: 20px;
+  transition: all .3s ease-out;
+  background: transparent url() no-repeat center;
+  background-size: 20px;
+  cursor: pointer;
+}
+
+.menu:hover {
+  opacity: 0.7;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.profile img {
+  width: 100%;
+}
+
+.search-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 30px;
+  flex-direction: column;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+h1, h2 {
+  font-size: 24px;
+  color: #f0f8ff;
+  margin-bottom: 10px;
+}
+
+.search-wrapper p {
+  margin: 0;
+  font-size: 12px;
+  color: #999999;
+  font-weight: 600;
+}
+
+.searchbox {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  padding: 5px 0 5px 30px;
+  background: #FAFAFA url() no-repeat 10px center;
+  background-size: 14px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #EEEEEE;
+}
+
+.search input {
+  background-color: transparent;
+  border: 0;
+  font-size: 12px;
+  line-height: 24px;
+  outline: none;
+  width: 100%;
+}
+
+.searchbox .filter {
+  width: 50px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all .3s ease-out;
+  border: 0;
+  background: #000000 url() no-repeat center;
+  background-size: 20px;
+}
+
+.searchbox .filter:hover {
+  opacity: 0.7;
+}
+
+.books {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.books h2 {
+  padding: 0 10px;
+  
+}
+
+.carousel {
+  width: 100%;
+  display: inline-flex;
+  white-space: nowrap;
+  overflow: auto;
+  padding: 0 0px 0 5px;
+  box-sizing: border-box;
+}
+
+.book {
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;  
+}
+
+.book:last-child {
+  padding-right: 30px;
+}
+
+.cover {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  height: 140px;
+}
+
+.cover img {
+  width: 100%;
+}
+
+h3 {
+  font-size: 14px;
+  color: #CCCCCC;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 10px 0 2px;
+}
+
+small, .book-wrapper p {
+  font-size: 10px;
+  font-weight: 600;
+  color: #999999;
+}
+
+.stars {
+  width: 100%;
+  display: flex;
+  margin-top: 4px;
+}
+
+.star {
+  width: 12px;
+  margin-right: 2px;
+  height: 12px;
+  background: url() no-repeat center;
+  background-size: 12px;
+}
+
+.tabs {
+  width: 100%;
+  padding: 30px 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.tabs button {
+  border: 1px solid #EEEEEE;
+  background: #000000;
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 8px;
+  color: #CCCCCC;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+  transition: all .3s ease-out;
+}
+
+.tabs button:first-child {
+  margin-right: 10px;
+}
+
+.tabs button:last-child {
+  margin-left: 10px;
+}
+
+.tabs button:hover {
+  background-color: #FF5353;
+  border-color: #FF5353;
+  color: #000000;
+}
+
+.tabs button.active {
+  background-color: #FF5353;
+  border-color: #FF5353;
+  color: #000000;
+  font-weight: 600;
+  box-shadow: 0 3px 10px 1px #DDDDDD;
+}
+
+.mybooks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+.mybook {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.mybook .cover {
+  min-width: 80px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.book-wrapper {
+  width: calc(100% - 100px);
+}
+
+.book-wrapper h3 {
+  margin-top: 0;
+  line-height: 20px;
+}
+
+.book-wrapper p {
+  margin: 0;
+  padding: 0;
+  line-height: 12px;
+}
+
+.rating {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.rating span {
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 2px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+}
+
+.bookmark {
+  border: 0;
+  cursor: pointer;
+  transition: all .3s ease-out;
+  margin-left: 10px;
+  background: url() no-repeat center;
+  background-size: 12px;
+}
+
+.bookmark:hover {
+  opacity: 0.7;
+}
+</style>
+
+
+    </div>  
+    </div>
+    </div>
+<script>
+    // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    // abri-ventanas-rmodal-1
+    function abrirmodal1(){
+        document.getElementById("modal1").style.display="grid";
+    }    
+    function cerrarmodal1(){
+        document.getElementById("modal1").style.display="none";
+    }        
+    // <!-- javascrip-para-el-elemento-preload -->
+      window.onload = function(){
+          $("#spinner").fadeOut();
+          $("body").removeClass("hidden")
+      }
+    // <!-- javascrip-para-el-elemento-preload -->
+    </script>
+    <script>    
+const filterItem = document.querySelector(".items");
+const filterImg = document.querySelectorAll(".gallery .image");
+window.onload = ()=>{     
+  filterItem.onclick = (selectedItem)=>{       
+        if(selectedItem.target.classList.contains("item")){ 
+          filterItem.querySelector(".active").classList.remove("active");                         selectedItem.target.classList.add("active");         
+      let filterName = selectedItem.target.getAttribute("data-name");         
+      filterImg.forEach((image) => {
+        let filterImges = image.getAttribute("data-name");                     
+        if((filterImges == filterName) || (filterName == "all")){
+          image.classList.remove("hide");             
+          image.classList.add("show");             
+        }else{
+          image.classList.add("hide"); 
+            
+          image.classList.remove("show");             
+        }
+      });
+    }
+  }
+  for (let i = 0; i < filterImg.length; i++) {
+    filterImg[i].setAttribute("onclick", "preview(this)"); 
+      
+  }
+}
+</script>
+
+
+
+
+
+</div></div></br>
+<br>
+<!--Barra de navegacion-->
+<div id="s-f"></div>
+<footer id="foot">
+<div class="icon-bar">
+  <a class="active"  href="go:inicio"><i class="fa fa-home"style="font-size:19px;cursor: default; padding-top:12px;"><div  style=" padding-top:5px; font-size:9px;  font-weight:600; font-family: 'Poppins', sans-serif;">Inicio</div></i></a>  
+<a href="go:categorias"><i class="fa fa-film"style="font-size:19px;cursor: default; padding-top:12px;"><div  style=" padding-top:5px; font-size:9px;  font-weight:600; font-family: 'Poppins', sans-serif;">Estrenos</div></i></a>   
+<a href="go:tvchannel"><i class="fa fa-tv"style="font-size:19px;cursor: default; padding-top:12px;"><div  style=" padding-top:5px; font-size:9px;  font-weight:600; font-family: 'Poppins', sans-serif;">Canales</div></i></a>  
+<a href="go:series"><i class="fa fa-video-camera"style="font-size:19px;cursor: default; padding-top:12px;"><div  style=" padding-top:5px; font-size:9px;  font-weight:600; font-family: 'Poppins', sans-serif;">Series</div></i></a>  
+<a href="go:ajustes"><i class="fa fa-sun-o"style="font-size:19px;cursor: default; padding-top:12px;"><div  style=" padding-top:5px; font-size:9px;  font-weight:600; font-family: 'Poppins', sans-serif;">Ajustes</div></i></a>  
+</div>
+</footer>
+<!-- FIN BOTINES INFERIORES -->
+
+
+
+</div>
+</footer>
+</body>
+</html>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+</span>
+<span class='post-timestamp'>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-icons'>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+        </div></div>      
+</div>
+</body>
+</html>
